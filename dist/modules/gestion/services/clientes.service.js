@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-var _a;
 import { InjectRepository } from "@nestjs/typeorm";
 import { Cliente } from "../entities/cliente.entity.js";
 import { EstadosClientesEnum } from "../enums/estados-clientes.enum.js";
@@ -68,7 +67,7 @@ ClientesService = __decorate([
     Injectable(),
     __param(0, InjectRepository(Cliente)),
     __param(1, Inject(forwardRef(() => "PROYECTOS_SERVICE"))),
-    __metadata("design:paramtypes", [typeof (_a = typeof Repository !== "undefined" && Repository) === "function" ? _a : Object, Function])
+    __metadata("design:paramtypes", [Repository, Function])
 ], ClientesService);
 export { ClientesService };
 //# sourceMappingURL=clientes.service.js.map

@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-var _a;
 import { BadRequestException, Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Tarea } from "../entities/tarea.entity.js";
@@ -44,7 +43,7 @@ let TareasService = class TareasService {
 TareasService = __decorate([
     Injectable(),
     __param(0, InjectRepository(Tarea)),
-    __metadata("design:paramtypes", [typeof (_a = typeof Repository !== "undefined" && Repository) === "function" ? _a : Object])
+    __metadata("design:paramtypes", [Repository])
 ], TareasService);
 export { TareasService };
 //# sourceMappingURL=tareas.service.js.map

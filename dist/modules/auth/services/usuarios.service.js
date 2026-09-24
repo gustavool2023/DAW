@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-var _a;
 import { Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
@@ -28,7 +27,7 @@ let UsuariosService = class UsuariosService {
 UsuariosService = __decorate([
     Injectable(),
     __param(0, InjectRepository(Usuario)),
-    __metadata("design:paramtypes", [typeof (_a = typeof Repository !== "undefined" && Repository) === "function" ? _a : Object])
+    __metadata("design:paramtypes", [Repository])
 ], UsuariosService);
 export { UsuariosService };
 //# sourceMappingURL=usuarios.service.js.map

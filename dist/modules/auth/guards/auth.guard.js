@@ -7,7 +7,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var _a;
 import { Injectable, UnauthorizedException } from "@nestjs/common";
 import { JwtService } from "@nestjs/jwt";
 let AuthGuard = class AuthGuard {
@@ -37,7 +36,7 @@ let AuthGuard = class AuthGuard {
 };
 AuthGuard = __decorate([
     Injectable(),
-    __metadata("design:paramtypes", [typeof (_a = typeof JwtService !== "undefined" && JwtService) === "function" ? _a : Object])
+    __metadata("design:paramtypes", [JwtService])
 ], AuthGuard);
 export { AuthGuard };
 //# sourceMappingURL=auth.guard.js.map

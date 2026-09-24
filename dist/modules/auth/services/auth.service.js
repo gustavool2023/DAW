@@ -7,7 +7,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var _a;
 import { Injectable, UnauthorizedException } from "@nestjs/common";
 import * as bcrypt from 'bcrypt';
 import { JwtService } from "@nestjs/jwt";
@@ -35,7 +34,8 @@ let AuthService = class AuthService {
 };
 AuthService = __decorate([
     Injectable(),
-    __metadata("design:paramtypes", [UsuariosService, typeof (_a = typeof JwtService !== "undefined" && JwtService) === "function" ? _a : Object])
+    __metadata("design:paramtypes", [UsuariosService,
+        JwtService])
 ], AuthService);
 export { AuthService };
 //# sourceMappingURL=auth.service.js.map
